@@ -8,3 +8,5 @@ def age (x,y):
 print(age(6, 6))
 print(age(7, 2))
 print(age(-7, 2.0))
+
+# ДОБАВИТЬ  СИСТЕМУ УРАВНЕНИЙ
