@@ -9,7 +9,5 @@ def cycle_number(num):
 cycle_number(spisok)
 print(spisok)
 
-
-
-
+# Циклически сдвиньте элементы списка вправо
 

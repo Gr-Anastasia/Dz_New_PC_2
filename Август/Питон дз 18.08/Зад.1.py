@@ -1,12 +1,14 @@
 def age (x,y):
-    age_sister = x+y
+    brother_age = x / (y - 1)
+    sister_age = brother_age + x
     if x==y:
         print("Сестра не может быть ровесницей брата")
-        return None
-    return age_sister
+        return
+    return sister_age
 
-print(age(6, 6))
-print(age(7, 2))
-print(age(-7, 2.0))
 
-# ДОБАВИТЬ  СИСТЕМУ УРАВНЕНИЙ
+print("Возраст сестры: ", age(6, 6), )
+print("Возраст сестры: ", age(6, 3))
+print("Возраст сестры: ", age(-7, 2.0))
+
+# Рассчитайте возраст сестры, зная X и Y. X может быть отрицательным, а Y может быть десятичной дробью. Сестра не может быть ровесницей брата.
