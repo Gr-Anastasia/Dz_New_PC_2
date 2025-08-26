@@ -4,6 +4,7 @@ a = 73
 b = 95
 stroka3 = 'В Ереване'
 stroka4 = '456'
+stroka5 = '6 - (12 * (2+3)/(5+6)))'
 
 
 # def cut_1():
@@ -60,8 +61,16 @@ stroka4 = '456'
 #     print(a)
 
 def ex_8():
-
-
+    cont_bracket = 0
+    for i in stroka5:
+        if i == '(' or i == ')':
+            cont_bracket += 1
+    if cont_bracket % 2 == 0:
+        couple = cont_bracket // 2
+        print(f"Скобки расставлены правильно. Количество пар: {couple}")
+    else:
+        missed_bracket = 1
+        print(f"Скобки расставлены неправильно. Количество скобок без пары: {missed_bracket}")
 
 # cut_1()
 # ex_2()
